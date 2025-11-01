@@ -9,7 +9,9 @@ import Event from "./event";
 import {motion} from "framer-motion"
 import VanilaTilt from "vanilla-tilt"
 import Link from "next/link";
-import imgWeb1 from "../../../../public/img/imgHome/web1.jpg"
+import imgWeb1 from "../../../../public/img/imgHome/Discussion.png"
+import imgWeb2 from "../../../../public/img/imgHome/Notification.png"
+import imgWeb3 from "../../../../public/img/imgHome/Profile.png"
 
 function Hero() {
   const tiltRef1 = useRef<HTMLDivElement>(null)
@@ -63,10 +65,10 @@ function Hero() {
         <div className="flex absolute z-10">
           <div className="w-[80rem] h-96 flex justify-between items-end">
             <div ref={tiltRef1} className="w-80 h-auto  mb-28 ml-6 ">
-              <Image src={imgWeb1} alt=""/>
+              <Image src={imgWeb2} alt=""/>
             </div>
             <div ref={tiltRef2} className="w-80 h-auto mb-20 mr-6 ">
-              <Image src={imgWeb1} alt="" />
+              <Image src={imgWeb3} alt="" />
             </div>
           </div>
         </div>

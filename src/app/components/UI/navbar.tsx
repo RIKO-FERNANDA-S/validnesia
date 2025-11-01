@@ -46,8 +46,8 @@ function Navbar() {
         <div className={`pl-4 pr-2  flex items-center `}>
           <Link href="/">
           
-          <h1 className="font-batharia text-3xl font-medium mr-28">
-            Zycn
+          <h1 className="font-batharia text-2xl font-medium mr-28">
+            Validnesia
           </h1></Link>
         </div>
         <div className="flex gap-10 font-medium ">

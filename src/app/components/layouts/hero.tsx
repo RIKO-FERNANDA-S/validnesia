@@ -2,7 +2,7 @@
 import {useEffect, useRef } from "react";
 import Image from "next/image";
 
-import About from "@/app/components/layouts/about"
+import About from "./about"
 import Discussion from "./discussion"
 import Event from "./event";
 
@@ -43,7 +43,7 @@ function Hero() {
 
   return (
     <div className="">
-      <section className="h-screen flex">
+      <section className="h-max flex">
         <div 
         className="flex flex-col items-center justify-start text-center pt-32 pb-10 h-max w-full bg-[url('/bgHome.png')] bg-cover m-3 shadow-[0px_0px_10px_rgba(0,0,0,0.25)] rounded-lg"> 
         <div className="w-2/5 flex flex-col items-center gap-2">

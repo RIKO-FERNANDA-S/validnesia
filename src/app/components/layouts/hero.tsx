@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import About from "./about"
 import Discussion from "./discussion"
-import Event from "./event";
+import Feature from "./feature";
 
 import {motion} from "framer-motion"
 import VanilaTilt from "vanilla-tilt"
@@ -78,7 +78,7 @@ function Hero() {
 
         <About/>
         <Discussion/>
-        <Event/>
+        <Feature/>
 
     </div>
   );

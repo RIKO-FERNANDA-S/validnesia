@@ -5,7 +5,7 @@ import Image from "next/image";
 
 import Link from "next/link";
 
-function flashSale() {
+function feature() {
   return (
     <main>
       
@@ -13,4 +13,4 @@ function flashSale() {
   );
 }
 
-export default flashSale;
+export default feature;

@@ -6,9 +6,9 @@ import Link from 'next/link'
 function footer() {
   return (
     <main className='bg-black text-white'>
-      <article className='flex py-10 justify-center px-24 border-b-2 border-borderAAA'>
-        <div className='flex flex-col w-1/2 pr-32'>
-          <h1 className='text-4xl font-batharia'>BAHTARI</h1>
+      <article className='flex py-10 justify-center px-24 border-b-2 '>
+        <div className='flex flex-col w-1/2 pr-20'>
+          <h1 className='text-4xl font-batharia'>Validnesia</h1>
           <p className='my-11 text-base font-normal text-textFooter'>Jl. Wijaya Kusuma No.9 - 11, Bebek, Berbek, Kec. Waru, Kabupaten Sidoarjo, Jawa Timur 61256</p>
           <p className='text-base font-normal text-textFooter'>Email: bathariagung@bussiness.com</p>
         </div>

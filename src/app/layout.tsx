@@ -18,7 +18,7 @@ export default function RootLayout({children }: Readonly<{ children: React.React
 {
   const pathname = usePathname();
   return (
-    <html lang="en">
+    <html lang="en" className=" scroll-smooth">
       <body className="bg-white">
       {!disabledNavbar.includes(pathname) && <Navbar/>}
         {children}

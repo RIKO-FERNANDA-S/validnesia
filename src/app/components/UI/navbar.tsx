@@ -8,7 +8,6 @@ import BtnSignUp from "./btnSignUp";
 import {motion} from "framer-motion"
 
 
-
 function Navbar() {
   const pathname = usePathname();
 
@@ -51,7 +50,7 @@ function Navbar() {
           </h1></Link>
         </div>
         <div className="flex gap-10 font-medium ">
-          <Link href="#about">
+          <Link href="/#about">
             <h1 className={` py-3 px-4 text-black`}>About Us</h1>
           </Link>
 
@@ -60,7 +59,7 @@ function Navbar() {
           </Link>
 
           <Link href="/event">
-            <h1 className={` py-3 px-4  ${pathname === "/gallery" ? "text-white bg-black rounded-md" : "text-black bg-none"}`}>Event</h1>
+            <h1 className={` py-3 px-4  ${pathname === "/gallery" ? "text-white bg-black rounded-md" : "text-black bg-none"}`}>Feature</h1>
           </Link>
 
           

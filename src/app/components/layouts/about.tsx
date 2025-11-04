@@ -8,7 +8,7 @@ import Icon4 from "../../../../public/img/icons/4.png";
 
 function About() {
   return (
-    <main className="mb-20 mt-20 h-screen w-full bg-white flex">
+    <main className="mb-20 mt-20 h-screen w-full bg-white flex" id="about">
       <section className="w-[55%] flex gap-5 h-4/5 justify-center items-center">
         <div className="w-max flex flex-col gap-5 h-max pl-14">
           <div className="flex gap-4 items-center">

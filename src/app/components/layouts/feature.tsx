@@ -43,6 +43,10 @@ function feature() {
           <p>Get latest news and updates</p>
         </div>
       </article>
+      <div className="content-none bottom-2 flex absolute z-1 break-after-column">
+        <div className="w-[45px] h-[40px] bg-[#004e8d]"></div>
+        <div></div>
+      </div>
     </main>
   );
 }

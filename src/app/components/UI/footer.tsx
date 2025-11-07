@@ -1,47 +1,113 @@
-'use client';
-import React from 'react'
-import Image from 'next/image';
-import Link from 'next/link'
+"use client";
+import React from "react";
+import Link from "next/link";
+import { useEffect } from "react";
 
 function footer() {
+  
+  useEffect(() => {
+    import("boxicons");
+  }, []);
+
+  const date = new Date();
+  const year = date.getFullYear();
   return (
-    <main className='bg-black text-white'>
-      <article className='flex py-10 justify-center px-24 border-b-2 '>
-        <div className='flex flex-col w-1/2 pr-20'>
-          <h1 className='text-4xl font-batharia'>Validnesia</h1>
-          <p className='my-11 text-base font-normal text-textFooter'>Jl. Wijaya Kusuma No.9 - 11, Bebek, Berbek, Kec. Waru, Kabupaten Sidoarjo, Jawa Timur 61256</p>
-          <p className='text-base font-normal text-textFooter'>Email: bathariagung@bussiness.com</p>
+    <main className="bg-[#004e8d] text-white">
+      <article className="flex py-10 justify-center px-24 border-b-2 ">
+        <div className="flex flex-col w-1/2 pr-20 gap-6">
+          <h1 className="text-4xl font-batharia">Validnesia</h1>
+
+          <p className="text-base font-normal text-textFooter">
+            Validnesia adalah platform media sosial digital yang berdedikasi
+            menyajikan informasi yang terverifikasi dan valid langsung dari
+            penjuru Indonesia. Kami berkomitmen melawan hoax dan misinformasi
+            demi terciptanya ruang digital yang cerdas dan berwawasan. Kami
+            percaya, kebenaran adalah hak setiap warga negara.
+          </p>
+
+          <div className="w-full flex gap-6 items-center justify-start">
+            <div className=" flex gap-6">
+              <Link
+                href=""
+                className="p-2 rounded-full border-2 border-white flex items-center"
+              >
+                <i className="bx bxl-instagram bx-sm"></i>
+              </Link>
+              <Link
+                href=""
+                className="p-2 rounded-full border-2 border-white flex items-center"
+              >
+                <i className="bx bxl-facebook bx-sm "></i>
+              </Link>
+              <Link
+                href=""
+                className="p-2 rounded-full border-2 border-white flex items-center"
+              >
+                <i className="bx bxl-youtube bx-sm "></i>
+              </Link>
+            </div>
+          </div>
         </div>
-        <div className='flex text-textFooter gap-28'>
-          <div className='flex flex-col gap-7'>
-            <h1 className='text-lg font-bold text-white'>Company</h1>
-            <Link href='/404'><p>About Us</p></Link> 
-            <Link href="/privacyAndPolicy"><p >Privacy Policy</p> </Link>
-            <Link href='/404'><p>Collaboration</p></Link>
+        <div className="flex text-textFooter gap-28">
+          <div className="flex flex-col gap-7">
+            <h1 className="text-lg font-bold text-white">Company</h1>
+            <Link href="/404">
+              <p>About Us</p>
+            </Link>
+            <Link href="/privacyAndPolicy">
+              <p>Privacy Policy</p>
+            </Link>
+            <Link href="/404">
+              <p>Collaboration</p>
+            </Link>
           </div>
-          <div className='flex flex-col gap-7'>
-            <h1 className='text-lg font-bold text-white'>Help</h1>
-            <Link href='/404'><p>Customer Service</p></Link>
-            <Link href="/404"><p>FAQ</p></Link>
-            <Link href="/404"><p>Email Us</p></Link>
+          <div className="flex flex-col gap-7">
+            <h1 className="text-lg font-bold text-white">Help</h1>
+            <Link href="/404">
+              <p>Customer Service</p>
+            </Link>
+            <Link href="/404">
+              <p>FAQ</p>
+            </Link>
+            <Link href="/404">
+              <p>Email Us</p>
+            </Link>
           </div>
-          <div className='flex flex-col gap-7'>
-            <h1 className='text-lg font-bold text-white'>Blog</h1>
-            <Link href="/404"><p>Article</p></Link>
-            <Link href="/404"><p>BathariaEdu</p></Link>
-            <Link href="/404"><p>Join Us</p></Link> 
+          <div className="flex flex-col gap-7">
+            <h1 className="text-lg font-bold text-white">Blog</h1>
+            <Link href="/404">
+              <p>Article</p>
+            </Link>
+            <Link href="/404">
+              <p>BathariaEdu</p>
+            </Link>
+            <Link href="/404">
+              <p>Join Us</p>
+            </Link>
           </div>
         </div>
       </article>
 
-      <article className='flex justify-between px-20 py-4 items-center'>
-        <div className='w-1/2 border-borderAAA border-r-2 p-4'>
-          <h1>PT.  Prakarsa Bathari Agung - THIS WEB FOR EDUCATION  </h1>
+      <article className="flex justify-between px-20 py-4 items-center">
+        <div className="w-full p-4 flex justify-around items-center">
+          <p>
+            2025 - {year} © Validnesia &nbsp;
+            <small>
+              Some images by &nbsp;
+              <a href="https://freepik.com" target="_blank">
+                Freepik&nbsp;
+              </a>
+              | Designed icons using &nbsp;
+              <a href="https://canva.com" target="_blank">
+                Canva
+              </a>
+            </small>
+          </p>
+          <Link href="">Terms & Prifacy Policy</Link>
         </div>
-       
       </article>
     </main>
-  )
+  );
 }
 
-export default footer
+export default footer;

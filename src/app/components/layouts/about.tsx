@@ -8,7 +8,7 @@ import Icon4 from "../../../../public/img/icons/4.png";
 
 function About() {
   return (
-    <main className="mb-20 mt-20 h-screen w-full bg-white flex" id="about">
+    <main className="mb-20 mt-20 h-max md:h-screen w-full bg-white flex flex-wrap max-md:flex-col" id="about">
       <section className="w-[55%] flex gap-5 h-4/5 justify-center items-center">
         <div className="w-max flex flex-col gap-5 h-max pl-14">
           <div className="flex gap-4 items-center">
@@ -31,7 +31,7 @@ function About() {
         </div>
       </section>
 
-      <section className="w-[45%] flex gap-5 h-4/5 justify-center ">
+      <section className="w-[45%] flex gap-5 h-4/5 justify-center max-md:flex-wrap">
         <article className=" flex flex-col gap-5 justify-end h-full">
           <div className="text-white gap-4 justify-center items-center p-5 flex flex-col text-center bg-linear-to-tr from-[#0751A6] to-[#023166] from-[5%] h-60 w-60 shadow-[4px_4px_5px_#110d0d5d]">
             <Image src={Icon1} alt="icon1" />

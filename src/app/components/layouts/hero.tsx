@@ -62,7 +62,7 @@ function Hero() {
         {/* Box Main */}
 
         {/* Box Second & Thirty */}
-        <div className="flex absolute z-10">
+        <div className=" lg:flex hidden absolute z-10">
           <div className="w-[80rem] h-96 flex justify-between items-end">
             <div ref={tiltRef1} className="w-80 h-auto  mb-28 ml-6 ">
               <Image src={imgWeb2} alt=""/>

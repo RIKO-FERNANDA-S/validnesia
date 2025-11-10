@@ -13,7 +13,7 @@ function footer() {
   const year = date.getFullYear();
   return (
     <main className="bg-[#004e8d] text-white">
-      <article className="flex py-10 justify-center px-24 border-b-2 ">
+      <article className="flex flex-wrap py-10 justify-center px-24 border-b-2 ">
         <div className="flex flex-col w-1/2 pr-20 gap-6">
           <h1 className="text-4xl font-batharia">Validnesia</h1>
 
@@ -48,7 +48,7 @@ function footer() {
             </div>
           </div>
         </div>
-        <div className="flex text-textFooter gap-28">
+        <div className="flex text-textFooter gap-28 flex-wrap">
           <div className="flex flex-col gap-7">
             <h1 className="text-lg font-bold text-white">Company</h1>
             <Link href="/404">

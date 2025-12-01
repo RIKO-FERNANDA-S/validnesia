@@ -12,12 +12,12 @@ function footer() {
   const date = new Date();
   const year = date.getFullYear();
   return (
-    <main className="bg-[#004e8d] text-white">
-      <article className="flex flex-wrap py-10 justify-center px-24 border-b-2 ">
-        <div className="flex flex-col w-1/2 pr-20 gap-6">
-          <h1 className="text-4xl font-batharia">Validnesia</h1>
+    <main className="bg-[#004e8d] w-full text-white">
+      <article className="flex flex-wrap py-10 justify-center px-16 border-b-2 ">
+        <div className="flex flex-col w-1/2 lg:pr-20 gap-6 max-lg:w-full">
+          <h1 className="text-4xl max-lg:text-center">Validnesia</h1>
 
-          <p className="text-base font-normal text-textFooter">
+          <p className="text-base font-normal text-textFooter max-lg:text-justify">
             Validnesia adalah platform media sosial digital yang berdedikasi
             menyajikan informasi yang terverifikasi dan valid langsung dari
             penjuru Indonesia. Kami berkomitmen melawan hoax dan misinformasi
@@ -25,7 +25,7 @@ function footer() {
             percaya, kebenaran adalah hak setiap warga negara.
           </p>
 
-          <div className="w-full flex gap-6 items-center justify-start">
+          <div className="w-full flex gap-6 items-center justify-start max-lg:justify-center max-lg:mb-5">
             <div className=" flex gap-6">
               <Link
                 href=""
@@ -88,9 +88,9 @@ function footer() {
         </div>
       </article>
 
-      <article className="flex justify-between px-20 py-4 items-center">
-        <div className="w-full p-4 flex justify-around items-center">
-          <p>
+      <article className="flex justify-between px-16 py-4 items-center">
+        <div className="w-full max-lg:p-3 p-4 flex flex-wrap  justify-around items-center max-lg:text-center gap-4">
+          <p className="max-lg:text-sm">
             2025 - {year} © Validnesia &nbsp;
             <small>
               Some images by &nbsp;
@@ -103,7 +103,7 @@ function footer() {
               </a>
             </small>
           </p>
-          <Link href="">Terms & Prifacy Policy</Link>
+          <Link href="" className="max-lg:text-sm">Terms & Prifacy Policy</Link>
         </div>
       </article>
     </main>

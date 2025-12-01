@@ -8,20 +8,20 @@ import Icon4 from "../../../../public/img/icons/4.png";
 
 function About() {
   return (
-    <main className="mb-20 mt-20 h-max md:h-screen w-full bg-white flex flex-wrap max-md:flex-col" id="about">
-      <section className="w-[55%] flex gap-5 h-4/5 justify-center items-center">
-        <div className="w-max flex flex-col gap-5 h-max pl-14">
+    <main className="my-20 h-max md:h-screen w-full max-lg:text-center bg-white flex flex-wrap max-md:flex-col" id="about">
+      <section className="w-full lg:w-[55%] flex gap-5 lg:h-4/5 justify-center items-center">
+        <div className="max-lg:w-full w-max flex flex-col gap-5 h-max px-5 max-lg:items-center lg:pl-14">
           <div className="flex gap-4 items-center">
-            <span className="w-5 h-[.25rem] bg-[#adadad]"></span>
+            <span className="w-5  h-[.25rem] bg-[#adadad] max-lg:hidden"></span>
             <h4 className="text-xl text-[#adadad]">About Us</h4>
           </div>
-          <div className="">
-            <h1 className="text-5xl font-semibold">
+          <div className="max-md:mb-8">
+            <h1 className="text-3xl min-md:text-5xl font-semibold">
               Where Ideas Turn Into Conversations
             </h1>
           </div>
-          <div className="w-[90%] text-justify">
-            <p className="text-lg  font-medium">
+          <div className="w-[90%] max-md:text-center">
+            <p className="text-lg max-md:hidden font-medium">
               We believe collaboration starts with sharing. Through
               community-led posts and meaningful discussions, every idea can
               spark new opportunities and inspire actions that go beyond the
@@ -31,9 +31,9 @@ function About() {
         </div>
       </section>
 
-      <section className="w-[45%] flex gap-5 h-4/5 justify-center max-md:flex-wrap">
-        <article className=" flex flex-col gap-5 justify-end h-full">
-          <div className="text-white gap-4 justify-center items-center p-5 flex flex-col text-center bg-linear-to-tr from-[#0751A6] to-[#023166] from-[5%] h-60 w-60 shadow-[4px_4px_5px_#110d0d5d]">
+      <section className="w-full lg:w-[45%] xl:h-[60%] flex gap-8 lg:gap-5 h-max lg:h-4/5 justify-center flex-wrap">
+        <article className=" flex flex-col gap-8 lg:gap-5 justify-end h-full">
+          <div className="text-white gap-4 justify-center items-center p-5 flex flex-col text-center bg-linear-to-tr from-[#0751A6] to-[#023166] from-[5%] h-60 w-60 max-md:w-80 max-md:h-80 shadow-[4px_4px_5px_#110d0d5d]">
             <Image src={Icon1} alt="icon1" />
             <div>
               <h3 className="text-base font-bold">Collaborative Workspace</h3>
@@ -43,7 +43,7 @@ function About() {
               </p>
             </div>
           </div>
-          <div className="text-[#0751A6] gap-4 justify-center items-center p-5 flex flex-col text-center bg-linear-to-br from-[#eaf1f1] to-[#b9edf5] from-[5%] h-60 w-60 shadow-[4px_4px_5px_#110d0d5d]">
+          <div className="text-[#0751A6] gap-4 justify-center items-center p-5 flex flex-col text-center bg-linear-to-br from-[#eaf1f1] to-[#b9edf5] from-[5%] h-60 w-60 max-md:w-80 max-md:h-80 shadow-[4px_4px_5px_#110d0d5d]">
             <Image src={Icon2} alt="icon2" />
             <div>
               <h3 className="text-base font-bold ">Centralized File Storage</h3>
@@ -54,8 +54,8 @@ function About() {
             </div>
           </div>
         </article>
-        <article className=" flex flex-col gap-5 justify-start h-full">
-          <div className="text-[#0751A6] gap-4 justify-center items-center p-5 flex flex-col text-center bg-linear-to-br from-[#eaf1f1] to-[#b9edf5] from-[5%] h-60 w-60 shadow-[4px_4px_5px_#110d0d5d]">
+        <article className=" flex flex-col gap-8 lg:gap-5 justify-start h-full">
+          <div className="text-[#0751A6] gap-4 justify-center items-center p-5 flex flex-col text-center bg-linear-to-br from-[#eaf1f1] to-[#b9edf5] from-[5%] h-60 w-60 max-md:w-80 max-md:h-80 shadow-[4px_4px_5px_#110d0d5d]">
             <Image src={Icon3} alt="icon3" />
             <div>
               <h3 className="text-[15px] font-bold"> Real-Time Communication</h3>
@@ -65,7 +65,7 @@ function About() {
               </p>
             </div>
           </div>
-          <div className="text-white gap-4 justify-center items-center p-5 flex flex-col text-center bg-linear-to-tr from-[#0751A6] to-[#023166] from-[5%] h-60 w-60 shadow-[4px_4px_5px_#110d0d5d]">
+          <div className="text-white gap-4 justify-center items-center p-5 flex flex-col text-center bg-linear-to-tr from-[#0751A6] to-[#023166] from-[5%] h-60 w-60 max-md:w-80 max-md:h-80 shadow-[4px_4px_5px_#110d0d5d]">
             <Image src={Icon4} alt="icon4" />
             <div>
               <h3 className="text-[15px] font-bold">Event & Task Management</h3>

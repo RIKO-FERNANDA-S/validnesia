@@ -42,28 +42,31 @@ function Hero() {
 
 
   return (
-    <div className="">
-      <section className="h-max flex">
+    <div className="h-max w-full">
+      <section className="h-max w-full flex justify-center">
         <div 
         className="flex flex-col items-center justify-start text-center pt-32 pb-10 h-max w-full bg-[url('/bgHome.png')] bg-cover m-3 shadow-[0px_0px_10px_rgba(0,0,0,0.25)] rounded-lg"> 
-        <div className="w-2/5 flex flex-col items-center gap-2">
-          <p>Community & Collaboration</p>
-          <h1 className="text-[2.5rem] font-semibold leading-snug tracking-[1px]">Your Space to Share, Learn, and Collaborate.</h1>
-          <h3 className="text-sm tracking-[.5px] w-4/5">A platform built for students and communities to share knowledge, manage projects, and grow together.</h3>
+        <div className=" w-[80%] md:w-[50%] lg:w-2/5 flex flex-col items-center gap-2">
+          <div  className=" max-sm:w-[20rem] mb-5  min-md:hidden h-auto flex justify-center items-center rounded-[1.8rem] ">
+            <Image src={imgWeb1} alt="image website" className="w-[90%] rounded-xl " />
+          </div>
+          <p className="text-xs md:text-xl">Community & Collaboration</p>
+          <h1 className="text-2xl md:text-2xl lg:text-[2.5rem] font-semibold leading-snug tracking-[1px]">Your Space to Share, Learn, and Collaborate.</h1>
+          <h3 className="md:text-sm tracking-[.5px] w-4/5">A platform built for students and communities to share knowledge, manage projects, and grow together.</h3>
           <Link href="/" className="flex py-2 px-7 items-center border rounded-xl shadow-md bg-btnNavbar text-white bg-[#0065B7]">Let's Try</Link>
         </div>
 
         {/* Box Main */}
-        <div className="flex justify-center items-center w-[33rem] h-auto py-5 rounded-[1.8rem] bg-[#a0e8f51e] mt-10">
-          <div  className="w-[30rem] h-auto py-5 flex justify-center items-center rounded-[1.8rem] bg-[#a0e8f53a]">
-            <Image src={imgWeb1} alt="image website" className="w-[90%] rounded-xl " />
+        <div className="flex justify-center items-center  w-max lg:w-[33rem] h-auto py-5 rounded-[1.8rem] md:bg-[#a0e8f51e] mt-10 max-md:hidden">
+          <div className=" max-md:hidden md:w-[28rem] h-auto py-5 flex justify-center items-center rounded-[1.8rem] md:bg-[#a0e8f53a]">
+            <Image src={imgWeb1} alt="image website" className="w-[90%] rounded-xl max-md:hidden" />
           </div>
         </div>
         {/* Box Main */}
 
         {/* Box Second & Thirty */}
         <div className=" lg:flex hidden absolute z-10">
-          <div className="w-[80rem] h-96 flex justify-between items-end">
+          <div className="xl:w-[79rem] 2xl:w-[90rem] h-96 flex justify-between items-end">
             <div ref={tiltRef1} className="w-80 h-auto  mb-28 ml-6 ">
               <Image src={imgWeb2} alt=""/>
             </div>

@@ -20,33 +20,29 @@ function feature() {
         <p className="w-1/4 text-[#7E7E7E] max-md:w-full md:text-sm md:w-1/3">Stay informed with the latest updates, important notices, and upcoming activities from our platform.</p>
       </article>
 
-      <article className="flex gap-8 max-lg:gap-12 flex-wrap justify-center w-full">
-        <div className="flex flex-col items-center gap-2 ">
-          <div className="flex justify-center bg-gradient-to-r from-[#CAF1F8] from-50% to-[#5ADDF4] px-5 pt-5 rounded-t-2xl w-[90%]">
+      <article className="flex gap-10 max-lg:gap-12 max-lg:flex-wrap overflow-hidden justify-center w-full">
+        <div className="flex flex-col items-center gap-2 w-[80%] ">
+          <div className=" flex justify-center bg-gradient-to-r from-[#CAF1F8] from-50% to-[#5ADDF4] px-5 pt-5 rounded-t-2xl w-80">
             <Image src={Img1} alt="image" className=" "/>
           </div>
           <h1 className="font-black text-3xl">Chatting</h1>
           <p>Connect and chat with friends</p>
         </div>
-        <div className="flex flex-col items-center gap-2 ">
-          <div className="flex justify-center bg-gradient-to-r from-[#CAF1F8] from-50% to-[#5ADDF4] px-5 pt-5 rounded-t-2xl w-[90%]">
+        <div className="flex flex-col items-center gap-2 w-[80%] ">
+          <div className="flex justify-center bg-gradient-to-r from-[#CAF1F8] from-50% to-[#5ADDF4] px-5 pt-5 rounded-t-2xl w-80">
             <Image src={Img2} alt="image"/>
           </div>
           <h1 className="font-black text-3xl">Blogging</h1>
           <p>Share stories and new ideas</p>
         </div>
-        <div className="flex flex-col items-center gap-2 ">
-          <div className="flex justify-center bg-gradient-to-r from-[#CAF1F8] from-50% to-[#5ADDF4] px-5 pt-5 rounded-t-2xl w-[90%]">
+        <div className="flex flex-col items-center gap-2 w-[80%] ">
+          <div className="flex justify-center bg-gradient-to-r from-[#CAF1F8] from-50% to-[#5ADDF4] px-5 pt-5 rounded-t-2xl w-80">
             <Image src={Img3} alt="image"/>
           </div>
           <h1 className="font-black text-3xl">Anoucement</h1>
           <p>Get latest news and updates</p>
         </div>
       </article>
-      {/* <div className="content-none bottom-2 flex absolute z-1 break-after-column">
-        <div className="w-[45px] h-[40px] bg-[#004e8d]"></div>
-        <div></div>
-      </div> */}
     </main>
   );
 }

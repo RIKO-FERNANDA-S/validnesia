@@ -25,7 +25,8 @@ function footer() {
             percaya, kebenaran adalah hak setiap warga negara.
           </p>
 
-          <div className="w-full flex gap-6 items-center justify-start max-lg:justify-center max-lg:mb-5">
+          {/* Icons Social Media Start */}
+          <div className="w-full flex gap-6 items-center justify-start max-lg:justify-center max-lg:mb-20 max-lg:mt-10">
             <div className=" flex gap-6">
               <Link
                 href=""
@@ -47,8 +48,12 @@ function footer() {
               </Link>
             </div>
           </div>
+          {/* Icons Social Media End */}
         </div>
-        <div className="flex text-textFooter gap-28 flex-wrap">
+
+        <div className="flex text-textFooter gap-28 flex-wrap max-md:text-center max-md:w-full max-md:justify-center">
+
+          {/* LINK LINK BAWAH 1 START */}
           <div className="flex flex-col gap-7">
             <h1 className="text-lg font-bold text-white">Company</h1>
             <Link href="/404">
@@ -61,6 +66,9 @@ function footer() {
               <p>Collaboration</p>
             </Link>
           </div>
+          {/* LINK LINK BAWAH 1 END */}
+
+          {/* LINK LINK BAWAH 2 START */}
           <div className="flex flex-col gap-7">
             <h1 className="text-lg font-bold text-white">Help</h1>
             <Link href="/404">
@@ -73,6 +81,9 @@ function footer() {
               <p>Email Us</p>
             </Link>
           </div>
+          {/* LINK LINK BAWAH 2 END */}
+
+          {/* LINK LINK BAWAH 3 START */}
           <div className="flex flex-col gap-7">
             <h1 className="text-lg font-bold text-white">Blog</h1>
             <Link href="/404">
@@ -85,6 +96,7 @@ function footer() {
               <p>Join Us</p>
             </Link>
           </div>
+          {/* LINK LINK BAWAH 3 END */}
         </div>
       </article>
 

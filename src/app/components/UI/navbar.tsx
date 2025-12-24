@@ -58,7 +58,7 @@ function Navbar() {
 
         {/* Components Link Large */}
         <div className="lg:flex hidden gap-10 font-medium items-center">
-          <Link href="/#about">
+          <Link href="/about">
             <h1 className={` py-3 px-4 text-black`}>About Us</h1>
           </Link>
 

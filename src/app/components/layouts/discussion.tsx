@@ -25,8 +25,11 @@ const Discussion = () => {
           communities to collaborate more effectively, make informed decisions,
           and achieve common goals faster.
         </p> 
-        <div className="flex flex-col gap-10 mt-9">
-          <div className="flex gap-4 flex-wrap justify-center max-md:text-center">
+
+        <div className="flex flex-col gap-10 mt-9 max-lg:w-full justify-center items-center">
+
+          {/* Article 1 Start */}
+          <div className="flex gap-4 max-md:flex-col max-lg:items-center justify-center max-md:text-center">
             <Image src={Icon1} alt="icon1" className="max-md:w-16 max-md:h-16" />
             <div >
               <h1 className="text-xl font-semibold">Group Chatting</h1>
@@ -36,7 +39,10 @@ const Discussion = () => {
               </p>
             </div>
           </div>
-          <div className="flex gap-4 flex-wrap justify-center max-md:text-center">
+          {/* Article 1 End */}
+
+          {/* Article 2 Start */}
+          <div className="flex gap-4 max-md:flex-col max-lg:items-center justify-center max-md:text-center">
             <Image src={Icon2} alt="icon2" className="max-md:w-16 max-md:h-16" />
             <div>
               <h1 className="text-xl font-semibold">Discussion Room</h1>
@@ -45,7 +51,10 @@ const Discussion = () => {
               </p>
             </div>
           </div>
-          <div className="flex gap-4 flex-wrap justify-center max-md:text-center">
+          {/* Article 2 End */}
+
+          {/* Article 3 Start */}
+          <div className="flex gap-4 max-md:flex-col max-lg:items-center justify-center max-md:text-center">
             <Image src={Icon3} alt="icon3" className="max-md:w-16 max-md:h-16" />
             <div>
               <h1 className="text-xl font-semibold">Event</h1>
@@ -54,6 +63,7 @@ const Discussion = () => {
               </p>
             </div>
           </div>
+          {/* Article 3 End */}
         </div>
       </div>
     </section>

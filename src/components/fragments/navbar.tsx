@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import BtnLogin from "./btnLogin";
-import BtnSignUp from "./btnSignUp";
+import BtnRegister from "./btnRegister";
 import { motion } from "framer-motion";
 
 function Navbar() {
@@ -91,7 +91,7 @@ function Navbar() {
         {/* Components Button Large */}
         <div className="lg:flex hidden gap-4 font-medium">
           <BtnLogin />
-          <BtnSignUp />
+          <BtnRegister />
         </div>
         {/* Components Button Large */}
 
@@ -100,8 +100,11 @@ function Navbar() {
           onClick={() => setIsOpen(!IsOpen)}
           className={` cursor-pointer max-lg:flex min-lg:hidden border-2 border-[#0065B7] rounded-lg`}
         >
-          {!IsOpen ? <i className={` bx bx-menu bx-md text-[#0065B7]`}></i> : <i className='bx bx-x bx-md text-[#0065B7]'></i>}
-          
+          {!IsOpen ? (
+            <i className={` bx bx-menu bx-md text-[#0065B7]`}></i>
+          ) : (
+            <i className="bx bx-x bx-md text-[#0065B7]"></i>
+          )}
         </button>
         {/* Components Burger Menu */}
 

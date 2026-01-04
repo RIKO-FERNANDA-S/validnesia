@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Img1 from "../../../../public/img/imgFeature/img1.png"
-import Img2 from "../../../../public/img/imgFeature/img2.png"
-import Img3 from "../../../../public/img/imgFeature/img3.png"
+import Img1 from "../../../public/img/imgFeature/img1.png"
+import Img2 from "../../../public/img/imgFeature/img2.png"
+import Img3 from "../../../public/img/imgFeature/img3.png"
 import Link from "next/link";
 
 function feature() {

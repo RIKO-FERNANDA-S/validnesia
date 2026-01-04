@@ -1,28 +1,21 @@
-'use client';
 import "./globals.css";
-import 'boxicons/css/boxicons.min.css';
-import Navbar from "@/app/components/UI/navbar";
-import Footer from "./components/UI/footer";
-import { usePathname } from "next/navigation";
+import "boxicons/css/boxicons.min.css";
+import FNWrapper from "@/components/fragments/footerNavbarWrapper";
+import { Metadata } from "next";
 
 
-// export const metadata: Metadata = {
-//   title: "GLAMOUR",
-//   description: "Beauty And Fasion",
-// };
+export const metadata: Metadata = {
+  title: "Validnesia",
+  description: "Information Validity Checker Indonesia",
+};
 
-
-const disabledNavbar = ['/shop/detailProduct']
-
-export default function RootLayout({children }: Readonly<{ children: React.ReactNode; }>) 
-{
-  const pathname = usePathname();
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className=" scroll-smooth">
       <body className="bg-white">
-      {!disabledNavbar.includes(pathname) && <Navbar/>}
-        {children}
-        <Footer/>
+        <FNWrapper>{children}</FNWrapper>
       </body>
     </html>
   );

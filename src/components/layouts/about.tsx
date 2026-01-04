@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Icon1 from "../../../../public/img/icons/1.png";
-import Icon2 from "../../../../public/img/icons/2.png";
-import Icon3 from "../../../../public/img/icons/3.png";
-import Icon4 from "../../../../public/img/icons/4.png";
+import Icon1 from "../../../public/img/icons/1.png";
+import Icon2 from "../../../public/img/icons/2.png";
+import Icon3 from "../../../public/img/icons/3.png";
+import Icon4 from "../../../public/img/icons/4.png";
 
 function About() {
   return (

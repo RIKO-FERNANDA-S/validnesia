@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Img from "../../../../public/img/imgDisscus/disscus.png";
-import Icon1 from "../../../../public/img/imgDisscus/icon1.png";
-import Icon2 from "../../../../public/img/imgDisscus/icon2.png";
-import Icon3 from "../../../../public/img/imgDisscus/icon3.png";
+import Img from "../../../public/img/imgDisscus/disscus.png";
+import Icon1 from "../../../public/img/imgDisscus/icon1.png";
+import Icon2 from "../../../public/img/imgDisscus/icon2.png";
+import Icon3 from "../../../public/img/imgDisscus/icon3.png";
 
 const Discussion = () => {
   return (

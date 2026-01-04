@@ -1,15 +1,18 @@
-import { Metadata } from "next";
-import Hero from "./components/layouts/hero";
+"use celient"
+import Hero from "../components/layouts/hero";
+// ANIMATION FROM FRAMER MOTION
+import { AnimatePresence } from "framer-motion";
 
-export const metadata: Metadata = {
-  title: "Validnesia",
-  description: "",
-};
 
 export default function Home() {
   return (
+    
       <main className="bg-white" >
-        <Hero></Hero>
+        <AnimatePresence mode="wait" initial={false}>
+      
+        <Hero/>
+          
+        </AnimatePresence>
       </main>
   
   );

@@ -9,9 +9,9 @@ import Feature from "./feature";
 import {motion} from "framer-motion"
 import VanilaTilt from "vanilla-tilt"
 import Link from "next/link";
-import imgWeb1 from "../../../../public/img/imgHome/Discussion.png"
-import imgWeb2 from "../../../../public/img/imgHome/Notification.png"
-import imgWeb3 from "../../../../public/img/imgHome/Profile.png"
+import imgWeb1 from "../../../public/img/imgHome/Discussion.png"
+import imgWeb2 from "../../../public/img/imgHome/Notification.png"
+import imgWeb3 from "../../../public/img/imgHome/Profile.png"
 
 function Hero() {
   const tiltRef1 = useRef<HTMLDivElement>(null)

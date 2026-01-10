@@ -3,8 +3,8 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import BtnLogin from "./btnLogin";
-import BtnRegister from "./btnRegister";
+import BtnLoginNav from "./button-login-navbar";
+import BtnRegisterNav from "./button-register-navbar";
 import { motion } from "framer-motion";
 
 function Navbar() {
@@ -90,8 +90,8 @@ function Navbar() {
 
         {/* Components Button Large */}
         <div className="lg:flex hidden gap-4 font-medium">
-          <BtnLogin />
-          <BtnRegister />
+          <BtnLoginNav />
+          <BtnRegisterNav />
         </div>
         {/* Components Button Large */}
 

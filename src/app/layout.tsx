@@ -1,8 +1,9 @@
 import "./globals.css";
 import "boxicons/css/boxicons.min.css";
-import FNWrapper from "@/components/fragments/footerNavbarWrapper";
+import FNWrapper from "@/components/fragments/footer-navbar-wrapper";
 import { Metadata } from "next";
-
+import { Toaster } from "sonner";
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: "Validnesia",
@@ -14,9 +15,12 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className=" scroll-smooth">
-      <body className="bg-white">
-        <FNWrapper>{children}</FNWrapper>
-      </body>
+      <Providers>
+        <body className="bg-white">
+          <FNWrapper>{children}</FNWrapper>
+          <Toaster position="top-right" />
+        </body>
+      </Providers>
     </html>
   );
 }
